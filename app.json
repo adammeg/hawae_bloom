@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "HawaeMD Patiente",
+    "slug": "hawae-md-patient",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "hawaemdpatient",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hawaemd.patient"
+    },
+    "android": {
+      "package": "com.hawaemd.patient",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-splash-screen",
+      "expo-localization",
+      [
+        "expo-notifications",
+        {
+          "defaultChannel": "hawaemd-reminders"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "HawaeMD utilise vos photos uniquement pour joindre un document à votre suivi."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
